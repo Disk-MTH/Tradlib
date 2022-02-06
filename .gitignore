@@ -1,4 +1,4 @@
 .idea
 python
 diskmth/dist
-diskmth/translator/src/translator.egg-info
+diskmth/src/translator/translator.egg-info
