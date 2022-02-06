@@ -1,4 +1,5 @@
 .idea
 python
 diskmth/dist
+diskmth/src/translator/__pycache__
 diskmth/src/translator/translator.egg-info
