@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: translator
+Version: 0.1
+Summary: A python library designed to allow an easy translation system for other projects
+Home-page: https://github.com/Disk-MTH/Translator
+Author: Disk_MTH
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Disk-MTH/Translator/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Translator
+
+Sorry for potential spelling mistakes but I'm French and I'm not so good in English.
+
+For the documentation of the library check [here](https://github.com/Disk-MTH/Translator/blob/master/diskmth/README.md).
+
+### Description:
+This library allows you to manage a translation system in an extremely simple way. 
+It supports compilation with Pyinstaller (you just need to include the translation files when 
+compiling and setup correctly the library).
+
+### Functions:
+
+- set_translations_files_path(full_path, flat_build, build_architecture):
+            This function is used to define the access path to the translation files
+
+
+    Args:
+        - full_path (required): The full path to the folder containing the uncompiled translation files
+        - flat_build (optional): Put true if all your translation files are at the root of your project when compiling
+          otherwise leave false
+        - build_architecture (optional): The full path for your translation files from the compiled project root
+
+
