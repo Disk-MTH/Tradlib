@@ -7,10 +7,10 @@ import functools
 import operator
 
 translations_path = os.getcwd()
+selected_extension = ".lang"
 translations = []
 
 """
-            Sorry for potential spelling mistakes but I'm French and I'm not so good in English
 Author: Disk_MTH
 GitHub: https://github.com/Disk-MTH/Translator
 License: MIT
@@ -22,7 +22,7 @@ For more information about the usage of this library read the full documentation
 
 def set_translations_files_path(full_path, flat_build=False, build_architecture=""):
     """
-    This function is used to define the access path to the translation files
+    This function is used to define the access path to the translation files.
     Args:
         - full_path (required): The full path to the folder containing the uncompiled translation files
         - flat_build (optional): Put true if all your translation files are at the root of your project when compiling
@@ -45,20 +45,37 @@ def set_translations_files_path(full_path, flat_build=False, build_architecture=
 def get_translations_files_path():
     """
     This function returns the path of your translation files. If you haven't setup this path with the
-    "set_translations_files_path()" function, this will return the current work directory.
+    "set_translations_files_path" function, this will return the current work directory.
     """
     return translations_path
 
 
+def set_translation_files_extension(extension):
+    """
+    This function set the extension to use for translations files.
+    Args:
+        - extension (required): The extension you want to set
+    """
+    global selected_extension
+    selected_extension = extension
+
+
+def get_translation_files_extension():
+    """
+    This function return your selected extension for translation files. Default is ".lang".
+    """
+    return selected_extension
+
+
 def load_translations_files():
     """
-    This function loads your translation files. If you don't have executed "set_translations_files_path()",
+    This function loads your translation files. If you don't have executed "set_translations_files_path",
     translations files in the current work directory will be load.
     """
     global translations
 
     for file in os.listdir(translations_path):
-        if str(file.lower()).endswith(".lang"):
+        if str(file.lower()).endswith(selected_extension):
             with open(translations_path + file, "r", encoding="utf-8") as lang:
                 try:
                     translations.append(json.load(lang))
