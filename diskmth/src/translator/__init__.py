@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-from translator import *
+from .translator import *
 
 """
 Author: Disk_MTH
