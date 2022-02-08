@@ -1,6 +1,6 @@
-# Translator
+# Tradlib
 
-For the overview of the library check [here](https://github.com/Disk-MTH/Translator/blob/master/README.md).
+For the overview of the library check [here](https://github.com/Disk-MTH/Tradlib/blob/master/README.md).
 
 ## Make translation files
 
@@ -23,9 +23,9 @@ This function is used to define the access path to the translation files
 Args:  
  - full_path (required): The full path to the folder containing the uncompiled translation files:
 	 ```python
-	full_path="C:\\Users\\some_user\\Desktop\\dev\\Translator"
+	full_path="C:\\Users\\some_user\\Desktop\\dev\\Tradlib"
 	 ```
-/!\ I recommend putting the path with `"\\"` rather than `"\"` because with `"\"` python can believe that you are trying to put unicode characters. In addition, your paths may or may not end with `"\\"` or `"\"` it will not change anything (`"C:\\Users\\some_user\\Desktop\\dev\\Translator"` and `"C:\\Users\\some_user\\Desktop\\dev\\Translator\\"` are equal)
+/!\ I recommend putting the path with `"\\"` rather than `"\"` because with `"\"` python can believe that you are trying to put unicode characters. In addition, your paths may or may not end with `"\\"` or `"\"` it will not change anything (`"C:\\Users\\some_user\\Desktop\\dev\\Tradlib"` and `"C:\\Users\\some_user\\Desktop\\dev\\Tradlib\\"` are equal)
 
  - flat_build (optional): Put true if all your translation files are at the root of your project when compiling otherwise leave false.
  
@@ -91,7 +91,7 @@ english.lang
 			"quit": "Quit"
 		},
 		{
-			"title": "Translator"
+			"title": "Tradlib"
 		}
 	],
 	
@@ -106,7 +106,7 @@ english.lang
 
 ## License
 
-All the files in this repository are completely free of rights (see the  [license](https://github.com/Disk-MTH/Translator/blob/master/diskmth/LICENSE.txt)) so you can grab the code and do whatever you want with them (just respect the  [license](https://github.com/Disk-MTH/Translator/blob/master/diskmth/LICENSE.txt)).
+All the files in this repository are completely free of rights (see the  [license](https://github.com/Disk-MTH/Tradlib/blob/master/diskmth/LICENSE.txt)) so you can grab the code and do whatever you want with them (just respect the  [license](https://github.com/Disk-MTH/Tradlib/blob/master/diskmth/LICENSE.txt)).
 
 Thanks for reading and good development!
 
