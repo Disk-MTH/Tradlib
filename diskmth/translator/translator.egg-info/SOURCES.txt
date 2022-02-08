@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+translator/translator.egg-info/PKG-INFO
+translator/translator.egg-info/SOURCES.txt
+translator/translator.egg-info/dependency_links.txt
+translator/translator.egg-info/top_level.txt
