@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) [2022-2022] [Translator] by [Disk_MTH] at [https://github.com/Disk-MTH/Tradlib]
+Copyright (c) [2022-2022] [Tradlib] by [Disk_MTH] at [https://github.com/Disk-MTH/Tradlib]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
