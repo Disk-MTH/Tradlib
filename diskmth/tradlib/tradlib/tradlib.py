@@ -76,7 +76,7 @@ def load_translations_files():
 
     for file in os.listdir(translations_path):
         if str(file.lower()).endswith(selected_extension):
-            with open(translations_path + file, "r", encoding="utf-8") as lang:
+            with open(translations_path + "\\" + file, "r", encoding="utf-8") as lang:
                 try:
                     translations.append(json.load(lang))
                 except json.decoder.JSONDecodeError:
